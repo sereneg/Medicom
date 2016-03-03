@@ -31,7 +31,15 @@ position: absolute;
 	height:79vh;
 	z-index:0;
 }
+.floatdiv{
+	position:fixed;
+	top:100px;
 
+	left:20px;
+	right:0;
+
+    z-index:2;
+}
 .overlay {
     position:fixed;
 	bottom:50px;

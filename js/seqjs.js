@@ -22,7 +22,7 @@ $( ".selectintro" ).click(function() {
 	}
 
 	createCookie("logintro",newlog,1);
-
+	
 	if(page == 11){   // go to history taking  seq1
 		window.location="/seq";
 	}
@@ -61,8 +61,8 @@ $( ".selectseq" ).click(function() {
 	}
 });
 //treatment plan 
-// history taking
-//$( ".selectpt" ).click(function() {
+
+
 $( ".selectplan" ).click(function() {
 		
 	var page = $(this).attr('value');

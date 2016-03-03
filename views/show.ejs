@@ -14,7 +14,7 @@
 				<span class="icon-bar"></span>
      		    <span class="icon-bar"></span>
    		</button>
-		<a class="navbar-brand" href="#">MediCom</a>    
+		<a class="navbar-brand" href="#" id="test">MediCom</a>    
   <!-- Collect the nav links, forms, and other content for toggling -->
  	    <div class="collapse navbar-collapse navbar-ex1-collapse">
       	    <ul class="nav navbar-nav">
@@ -37,6 +37,14 @@
 	
 	    <% if(bgVideo) { %>
 	    <div class="videoContainer"  class="embed-responsive embed-responsive-16by9">
+			<div class="floatdiv" >
+				<div id="effectUp" style="display:none" >
+					<input type="image"  class="btn btn-default " id="bouncy" src="glyphicons-7-user-add.png" width="50px" height="50px">
+				</div>
+				<div id="effectDown" style="display:none">
+					<input type="image"  class="btn btn-default " id="bouncy" src="glyphicons-8-user-remove.png" width="50px" height="50px">
+				</div>
+			</div>
 			<video autoplay class="embed-responsive-item" id="video1">
 		    <source src="<%= bgVideo %>" type="video/mp4">
 			</video>

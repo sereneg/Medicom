@@ -58,3 +58,48 @@ $("#showText").click(function (){
 		shownText = false;
 	}
 });
+function getAttention(elementClass, elementID,initialDistance, times, damping) {
+	$('#'+elementID).show();
+	for(var i=1;i<=times;i++){
+		var an = Math.pow(-1,i)*initialDistance/(i*damping)+100;
+		$('.'+elementClass).animate({'top':an},100);
+	}
+	  $('.'+elementClass).animate({'top':100},{
+		duration: 1000,
+		specialEasing: {
+		  width: "linear",
+		  height: "easeOutBounce"
+		},
+		complete: function() {
+		$('#'+elementID).hide();
+		}
+	  });
+  //
+}
+
+
+window.onload = function(){ 
+
+	var addr = window.location;
+	var pos = "?number=";
+	var prefix_local = "http://localhost:8080/";
+	var prefix_online = "http://medicom-demoag.rhcloud.com/";
+	var page = addr.toString().substring(35,36);
+	if(page == 2 || page == 5 || page == 8){
+		getAttention("floatdiv","effectUp", 50, 10, 1.2);
+	}
+	if(page == 3 || page == 4 || page == 6){
+		getAttention("floatdiv","effectDown", 50, 10, 1.2);
+	}
+
+
+	
+}
+
+
+
+$( "#test").click(function() {
+	
+	getAttention("floatdiv","effectUp", 50, 10, 1.2);
+	
+});
