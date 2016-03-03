@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Demo Medicom</title>
+<link href="bootstrap.css" rel="stylesheet">
+ <script src="cookies.js"></script>   
+<script src="jquery-1.10.2.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+	<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+     		    <span class="icon-bar"></span>
+   		    </button>
+    	    <a class="navbar-brand" href="#">MediCom</a>
+    	
+ 		</div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+ 	    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      	  <ul class="nav navbar-nav">
+ 		
+   			 <li><a href="#" data-toggle="modal" data-target="#profilModal">Patient profile</a></li>
+   			 
+     		
+     	  </ul>
+     	  <ul class="nav navbar-nav navbar-right">
+     	 	 
+     	 	 <li><a href="#">Tips</a></li>
+     	 	 <li><a href="#">About</a></li>
+     	  </ul>    
+  		</div><!-- /.navbar-collapse -->
+	</nav>
+	
+
+	
+		<div class="container" style="border:1px solid #B3E3EA;height:1154px; width:80%; background-image:url(salle_attente1.JPG);background-repeat:no-repeat;" >
+		
+  <div style="position: absolute; top: 50%; left: 50%;margin-top: -1.2em;">
+     
+      	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+ 			 PLAY!
+			</button>
+    </div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+    				  <div class="modal-header">
+       					 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      					 <h4 class="modal-title" id="myModalLabel">Prenez un choix</h4>
+    				  </div>
+   					  <div class="modal-body">
+   					  	<button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='/intro'">Introduction</button>
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/seq'">Anamnèse</button>
+						<button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='/plan'">Plan de traitement</button>
+       				
+       				
+     				  </div>
+      				  <div class="modal-footer">
+      				  	 <p> M. Dupont, 50 ans.</p>
+       				 	 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+   
+      				  </div>
+    </div>
+  </div>
+</div>
+		</div>
+	
+	            <!-- Modal -->
+			<div class="modal fade" id="profilModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ 		   		<div class="modal-dialog">
+    			<div class="modal-content">
+      			<div class="modal-header">
+        			
+        			<strong class="modal-title" id="myModalLabel">Profils du M. Dupont </strong>
+      			</div>
+     		    <div class="modal-body">
+       				 <h3>Homme de 50 ans, diabetique type 2.</h3>
+            		 <div id="patientParoles"></div>
+     		    </div>
+     			<div class="modal-footer">
+      		  	    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    
+                </div>
+                </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+              
+
+
+   
+     <script type="text/javascript">
+     eraseCookie("log");   //erase cookie
+	  eraseCookie("logintro");
+	  	  eraseCookie("logpt");
+
+   </script>  
+</body>
+</html>

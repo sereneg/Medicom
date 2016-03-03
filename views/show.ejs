@@ -1,0 +1,182 @@
+﻿<!doctype html>
+<html lang="fr">
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title><%= title %></title>
+	<link href="bootstrap.css" rel="stylesheet">
+	<link href="mycss.css" rel="stylesheet">
+
+    </head>
+    <body>
+	<nav class="navbar navbar-inverse" role="navigation">	   
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		    <span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+     		    <span class="icon-bar"></span>
+   		</button>
+		<a class="navbar-brand" href="#">MediCom</a>    
+  <!-- Collect the nav links, forms, and other content for toggling -->
+ 	    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      	    <ul class="nav navbar-nav">
+				<li><a href="#" data-toggle="modal" data-target="#profilModal">Patient profile</a></li>
+				<li><a href="/<%= type %>"  >Restart</a></li>
+				<li><a href="../" class="btn btn-danger">Quit</a></li>
+			</ul>
+     	  	<ul class="nav navbar-nav navbar-right">
+     	 	    <li><a href="#" data-toggle="modal" data-target="#tipsModal">Tips</a></li>
+     	 	    <li><a href="#" data-toggle="modal" data-target="#aboutModal">About</a></li>
+     	 	    <li><a target="_blank" href="log1.html">View Logs</a></li>
+     	        </ul>
+  	    </div><!-- /.navbar-collapse -->
+	</nav>
+	<div classe="wrapper" >
+		<div class="preloader"><img class="centerIMG" src="loading.gif"></div>
+		<% if(bgImage) { %>
+		<div class="container" style="width:1024px; height:400px;background-image:url(<%= bgImage %>);background-repeat:no-repeat;" ></div>
+		<% } %>
+	
+	    <% if(bgVideo) { %>
+	    <div class="videoContainer"  class="embed-responsive embed-responsive-16by9">
+			<video autoplay class="embed-responsive-item" id="video1">
+		    <source src="<%= bgVideo %>" type="video/mp4">
+			</video>
+	    </div>
+	    <% } %>
+	    <div class="overlay" style="display: none">
+		<ul class="list-unstyled" id="transcript" style="display: none">
+		    <li>
+			<ul>
+			    <% for(var i = 0; i<phrases.length; i++) { %>
+			    <li><% if(phrases[i].isDoctor) { %> <mark>Medecin: </mark> <% } else{ %> Patient: <% } %> <%= phrases[i].expression %> </li>
+			    <% } %>
+			</ul>
+		    </li>
+		</ul>
+	        <% for(var i = 0; i<buttons.length; i++) { %>
+	        <button type="button" class="btn btn-default btn-lg btn-block select<%= type %>" value="<%= buttons[i].value %>"> <%= buttons[i].content %></button>
+		<% } %>
+	    </div>
+	    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+			
+				<div class="btn-group pull-right" role="group" aria-label="...">
+				<input type="image" class="btn btn-default " id="slideToggle" src="glyphicons-214-arrow-up.png" width="50" height="50">
+				<input type="image" class="btn btn-default " id="playVideo" src="glyphicons-175-pause.png" width="50" height="50"/>
+				<input type="image" class="btn btn-default " id="showText" src="glyphicons-196-info-sign.png" width="50" height="50" disabled>
+				</div>
+			
+	    </nav>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Aide Medicom</h4>
+		  </div>
+		  <div class="modal-body">
+			<b>Le prototype est composé de trois séquences :</b><br>
+			L’arrivée du patient dans la salle de consultation<br>
+			L’anamnèse <br>
+			Le plan de traitement
+			<br>		
+			etc...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+			
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">About Medicom</h4>
+		  </div>
+		  <div class="modal-body">
+		
+			MediCom, est un serious game. Placé dans un environnement familier – la salle de consultation – le joueur (ici, l’interne) est confronté à un patient et doit répondre à ses demandes. La 
+
+mission du joueur est de créer une relation durable de confiance avec son patient. Au cours de la partie, 
+
+le joueur retrouve toutes les étapes de consultation (arrivée du patient, anamnèse, plan de traitement, 
+
+etc.). Il est confronté à des choix qui altèreront ou bonifieront son lien avec le patient. Chaque action 
+
+menée par le joueur est liée à des problématiques de communication. 
+
+La particularité de MediCom est d’être entièrement réalisé en prises de vue réelles. Ce procédé a été 
+
+choisi afin de favoriser l’immersion de l’utilisateur. Ces séquences sont tournées au sein du Connected 
+
+Health Lab, à Castres : une plateforme de recherche de type living-lab, proposant un environnement 
+
+médical complet.
+			<br>		
+			etc...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+			
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="profilModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ 	    <div class="modal-dialog">
+    	        <div class="modal-content">
+      	    	    <div class="modal-header">
+			<strong class="modal-title" id="myModalLabel">Profils du M. Dupont </strong>
+      		    </div>
+     		    <div class="modal-body">
+       		        <h3>Homme de 50 ans, diabetique type 2.</h3>
+            	        <div id="patientParoles"></div>
+     		    </div>
+     		    <div class="modal-footer">
+      		        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+	<script src="jquery-1.10.2.js"></script>
+    	<script src="bootstrap.min.js"></script>
+    	<script src="seqjs.js"></script>
+        <script src="cookies.js"></script>
+	<script src="myscript.js"></script>
+	<% if(bgImage) { %>
+	<script type="text/javascript">
+	    showChoices();
+ 	</script>
+	<% } %>
+
+	<% if(bgVideo) { %>
+        <script type="text/javascript">
+			window.addEventListener('load', function() {
+			var video = document.querySelector('#video1');
+			var preloader = document.querySelector('.preloader');
+
+			function checkLoad() {
+				if (video.readyState === 4) {
+				
+					preloader.parentNode.removeChild(preloader);
+				} else {
+					setTimeout(checkLoad, 100);
+				}
+			}
+				checkLoad();
+			}, false);
+
+	    $("#video1").bind("ended", function() {
+		showReplay();
+		showChoices();
+	});
+ 	</script>
+	<% } %>
+    </body>
+</html>
+

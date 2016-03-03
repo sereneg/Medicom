@@ -1,0 +1,69 @@
+.videoContainer 
+{
+position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+
+}
+.wrapper {
+  width: 80%;
+ 
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+}
+.wrapper:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.videoContainer video 
+{
+    min-width: 100%;
+    min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height:79vh;
+	z-index:0;
+}
+
+.overlay {
+    position:fixed;
+	bottom:50px;
+	left:0;
+	right:0;
+
+    z-index:1;
+	
+}
+.navbar-header{
+  width:100%;
+  padding:0 50px;
+}
+img.centerIMG {
+    display: block;
+    margin-left: 85vh;
+	margin-top: 20vh;
+    margin-right: auto;
+	vertical-align: middle;
+
+
+}
+div.preloader{
+    display: block;
+	vertical-align:middle;
+	text-align:center;
+	position:absolute;
+	z-index:10;
+    margin-left: auto;
+    margin-right: auto;	
+	width:100vh; 
+	height:90vh;
+	
+}
+
