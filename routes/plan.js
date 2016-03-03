@@ -43,7 +43,7 @@ var pages = [
 // 1
 {
 	bgImage: null,
-	bgVideo: "PlanS1.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/PlanS1.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Donc, mr Dupont, je vous renouvelle votre ordonnance. On repart sur de l’Amlodipine, de la Metformine et je vous rajoute du Cialis."},
 		{isDoctor: false, expression: "Oui, d'accord."}
@@ -53,7 +53,7 @@ var pages = [
 // 2
 {
 	bgImage: null,
-	bgVideo: "PlanS2.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/PlanS2.mp4",
 	phrases: [
 		{isDoctor: true, expression: "On vous augmente la Metformine pour traiter votre diabète, monsieur Dupont. De 1000 mg à 1002"},
 		{isDoctor: false, expression: "Oui, je connais la Metformine. J’ai l’habitude de le prendre."},
@@ -69,7 +69,7 @@ var pages = [
 // 3
 {
 	bgImage: null,
-	bgVideo: "PlanS3.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/PlanS3.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Je vous prescrits les mêmes médicaments que la dernière fois..."},
 		{isDoctor: false, expression: "D'accord."},
@@ -84,7 +84,7 @@ var pages = [
 // 4
 {
 	bgImage: null,
-	bgVideo: "PlanS4.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/PlanS4.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Oui, c’est bien, mais j’aimerais que vous alliez voir un cardiologue, quand même."},
 		{isDoctor: false, expression: "Un cardiologue parce que, euh, je n’arrive pas à ... ?"},
@@ -96,7 +96,7 @@ var pages = [
 // 5
 {
 	bgImage: null,
-	bgVideo: "PlanS5.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/PlanS5.mp4",
 	phrases: [
 		{isDoctor: true, expression: "On va essayer le Cialis pendant quinze jours mais il faudra qu’on en rediscute... Cela pourrait être les signes d’un problème cardio-vasculaire... Il faut qu’on suive ça."},
 		{isDoctor: false, expression: "Ah d’accord, je comprends..."}
@@ -106,7 +106,7 @@ var pages = [
 // 6
 {
 	bgImage: null,
-	bgVideo: "PlanS6.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/PlanS6.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Tout est clair pour vous, mr Dupont ?"},
 		{isDoctor: false, expression: "Oui, je crois bien."},
@@ -120,7 +120,7 @@ var pages = [
 // 7
 {
 	bgImage: null,
-	bgVideo: "PlanS7.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/PlanS7.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Le mieux serait de se revoir très vite pour bien suivre ces derniers éléments."},
 		{isDoctor: false, expression: "D'accord..."},	

@@ -60,7 +60,7 @@ var pages = [
 // 1
 {
 	bgImage: null,
-	bgVideo: "AnamS1f.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS1f.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Rappelez-moi, à combien était votre taux de glycémie est à combien ?"},
 		{isDoctor: false, expression: "La dernière fois, il y a deux mois, elle était à 7 %."},
@@ -73,7 +73,7 @@ var pages = [
 // 2
 {
 	bgImage: null,
-	bgVideo: "AnamS2.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS2.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Comment le vivez-vous ce diabète en ce moment ?"},
 		{isDoctor: false, expression: "Ben, ça va, mais je me sens fatigué tout le temps…"},
@@ -85,7 +85,7 @@ var pages = [
 // 3
 {
 	bgImage: null,
-	bgVideo: "AnamS3.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS3.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Et sinon, vous êtes fatigué ?"},
 		{isDoctor: false, expression: "Ah ça oui alors ! Tenez, quand je suis au jardin, a peine je commence que je suis déjà essoufflé."}
@@ -96,7 +96,7 @@ var pages = [
 // 4
 {
 	bgImage: null,
-	bgVideo: "AnamS4.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS4.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Vous avez des difficultés particulières ?"},
 		{isDoctor: false, expression: "Euh... c'est-à-dire ?"}
@@ -107,7 +107,7 @@ var pages = [
 // 5
 {
 	bgImage: null,
-	bgVideo: "AnamS5.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS5.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Et sinon, comment dormez-vous la nuit ?"},
 		{isDoctor: false, expression: "Ben… pas très bien. Je me lève plusieurs fois pour aller faire pipi. "}
@@ -117,7 +117,7 @@ var pages = [
 // 6
 {
 	bgImage: null,
-	bgVideo: "AnamS6.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS6.mp4",
 	phrases: [
 		{isDoctor: false, expression: "J’ai des choses à planter, vous comprenez. Je dois me pencher et franchement, c’est dur…"},
 		{isDoctor: true, expression: "Ça vous fait mal quelque part ? "},
@@ -130,7 +130,7 @@ var pages = [
 // 7
 {
 	bgImage: null,
-	bgVideo: "AnamS7f.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS7f.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Comment décririez-vous votre sommeil ?"},
 		{isDoctor: false, expression: "Ben.... Mon sommeil.... Je dors pas trop mal mais, je me lève plusieurs fois pour aller faire pipi."}
@@ -141,7 +141,7 @@ var pages = [
 // 8
 {
 	bgImage: null,
-	bgVideo: "AnamS8.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS8.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Pour aller faire pipi ?"},
 		{isDoctor: false, expression: "Oui pour aller aux toilettes. "}
@@ -151,7 +151,7 @@ var pages = [
 // 9
 {
 	bgImage: null,
-	bgVideo: "AnamS9.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS9.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Combien de fois y allez-vous par nuit ?"},
 		{isDoctor: false, expression: "Trois, parfois quatre."}
@@ -161,7 +161,7 @@ var pages = [
 // 10
 {
 	bgImage: null,
-	bgVideo: "AnamS10.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS10.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Vous pouvez m’en dire plus ? "},
 		{isDoctor: false, expression: "Ben faut que je pousse quand même."}
@@ -171,7 +171,7 @@ var pages = [
 // 11
 {
 	bgImage: null,
-	bgVideo: "AnamS11.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS11.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Très bien, je prends note. Et sinon, et votre vue ? "},
 		{isDoctor: false, expression: "Oh ça va, c'est comme la dernière fois, quoi..."}
@@ -181,7 +181,7 @@ var pages = [
 // 12
 {
 	bgImage: null,
-	bgVideo: "AnamS12.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS12.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Je note ça aussi… Autrement, mangez-vous avec appétit ? "},
 		{isDoctor: false, expression: "Je sais pas, je fais pas trop attention à ça."},
@@ -193,7 +193,7 @@ var pages = [
 // 13
 {
 	bgImage: null,
-	bgVideo: "AnamS13.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS13.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Vous voulez dire que votre vue est stable ou qu'elle a encore baissé ? "},
 		{isDoctor: false, expression: "Ben oui elle a encore baissé, comme l'autre fois quoi."},
@@ -206,7 +206,7 @@ var pages = [
 // 14
 {
 	bgImage: null,
-	bgVideo: "AnamS14.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS14.mp4",
 	phrases: [
 		{isDoctor: true, expression: "C'est vous qui cuisinez à la maison ? "},
 		{isDoctor: false, expression: "Non c'est ma femme."},
@@ -220,7 +220,7 @@ var pages = [
 // 15
 {
 	bgImage: null,
-	bgVideo: "AnamS15.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/AnamS15.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Très bien, nous allons voir tout ça. Allons de l’autre côté ; je vais vous examiner. "},
 		{isDoctor: false, expression: "D’accord."}

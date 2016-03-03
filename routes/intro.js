@@ -55,7 +55,7 @@ var pages = [
 // 1
 {
 	bgImage: null,
-	bgVideo: "IntroS1.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS1.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Bonjour Mr Dupont."},
 		{isDoctor: false, expression: "Bonjour Docteur."},
@@ -66,7 +66,7 @@ var pages = [
 // 2
 {
 	bgImage: null,
-	bgVideo: "IntroS2.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS2.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Asseyez-vous, monsieur Dupont."},
 		{isDoctor: false, expression: "Ah merci, c'est que j'attends depuis plus d'une heure...."},
@@ -78,7 +78,7 @@ var pages = [
 // 3
 {
 	bgImage: null,
-	bgVideo: "IntroS3.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS3.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Vous pouvez vous asseoir."},
 		{isDoctor: false, expression: "Ah merci, vous savez ça fait plus d'une heure que j'attends et... enfin... bon... maintenant que je suis là ..."},
@@ -92,7 +92,7 @@ var pages = [
 // 4
 {
 	bgImage: null,
-	bgVideo: "IntroS4.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS4.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Comment allez-vous monsieur Dupont ? "},
 		{isDoctor: false, expression: "et bien, ca faisait longtemps que je n'étais pas venu alors..."},
@@ -110,7 +110,7 @@ var pages = [
 // 5
 {
 	bgImage: null,
-	bgVideo: "IntroS5.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS5.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Je vous écoute. "},
 		{isDoctor: false, expression: "Bon... euh.... je me suis dit que ca faisait longtemps que j'étais pas venu...."},
@@ -128,7 +128,7 @@ var pages = [
 // 6
 {
 	bgImage: null,
-	bgVideo: "IntroS6.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS6.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Vous me dites donc qu’il n’y a rien de particulier depuis la dernière fois ? "},
 		{isDoctor: false, expression: "Non pas grand-chose. Attendez que je me souvienne.... J’ai des trous de mémoire parfois !"},
@@ -145,7 +145,7 @@ var pages = [
 // 7
 {
 	bgImage: null,
-	bgVideo: "IntroS7.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS7.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Vous avez votre carnet de glycémie avec vous pour que nous puissions voir ça ensemble ? "},
 		{isDoctor: false, expression: "Oh non, mince, je l’ai oublié ! "}
@@ -156,7 +156,7 @@ var pages = [
 // 8
 {
 	bgImage: null,
-	bgVideo: "IntroS8.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS8.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Je vous écoute. "},
 		{isDoctor: false, expression: "Bon... euh.... je me suis dit que ca faisait longtemps que j'étais pas venu...."},
@@ -174,7 +174,7 @@ var pages = [
 // 9
 {
 	bgImage: null,
-	bgVideo: "IntroS9.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS9.mp4",
 	phrases: [
 		{isDoctor: true, expression: "C'est embétant cela, Mr Dupont. Je vous avais pourtant de ne pas l'oublier. C’est important de pouvoir suivre l’évolution de votre diabète. "},
 		{isDoctor: false, expression: "Vous savez, je ne suis pas sur que cela vous aiderait beaucoup. Je ne suis pas très régulier dans mes notes..."},
@@ -188,7 +188,7 @@ var pages = [
 // 10
 {
 	bgImage: null,
-	bgVideo: "IntroS10.mp4",
+	bgVideo: "http://kim.kurasawa.fr/medicom/IntroS10.mp4",
 	phrases: [
 		{isDoctor: true, expression: "Ce n’est pas la première fois que vous l’oubliez, si je me souviens bien... "},
 		{isDoctor: false, expression: "Oui, je sais bien."},
